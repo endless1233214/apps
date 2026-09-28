@@ -1,9 +1,9 @@
 name: Renovate
 
 on:
+  # This fork does not run TrueNAS Renovate automatically. The upstream
+  # truenas/apps repository owns dependency updates for the catalog.
   workflow_dispatch:
-  schedule:
-    - cron: "0 12 * * *"
 
 concurrency:
   group: renovate
